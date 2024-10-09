@@ -51,7 +51,7 @@ body {
 }  
 }
 header{
-  height: 56px;
+  height: 72px;
   border-bottom:1px solid #e7e9fc;
   gap: 30px;
 }
@@ -59,7 +59,7 @@ header{
   display: flex;
   width: 1158px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 0 15px;
   align-items: center;
   justify-content: space-between;
   font-weight: 400px;
@@ -68,10 +68,10 @@ header{
 .logo { 
   color: #2e2f42;
   list-style-type: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  initial-letter: 3%;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 24px;
+  initial-letter: 2%;
   text-decoration: none;
   width: 115px;
   height: 24px;
@@ -91,11 +91,10 @@ header{
 
 .nav-menu {
   list-style-type: none;
-  display: none;
+  display: flex;
   width: 261px;
   gap: 40px;
   color: #2E2F42;
-
   
 }
 
@@ -143,7 +142,7 @@ header{
   font-size: 1em;
   line-height: 1.5em;
   initial-letter: 2%;
-  display:none;
+  display:flex;
   gap:40px;
   margin-left: 350px;
 }
@@ -158,16 +157,6 @@ header{
     font-style: normal;
     color:#434455;
 }
-.burger-button{
-  padding: 0;
-  border: none;
-  border-color: transparent;
-  background-color: transparent;
-}
-.burger-icon{
-  display: block;
-  background-color: transparent;
-}
 .title-htree{
   color:#2E2F42;
   font-weight: 500;
@@ -175,32 +164,30 @@ header{
   line-height: 1.5em;
   initial-letter: 2%;
   margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
   
 }
 .section-one{
-  width: 100%;
-  height: 432px;
+  width: 1440px;
   background-color: #2E2F42;
   background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
-  background-size: 100% cover;
+  background-size: 1440px cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
   text-align: center;
   margin: 0 auto;
+  padding: 188px 0;
   
 }
 .order-one{
+  max-width: 496px;
   color: #FFFFFF;
   font-weight:700px;
-  font-size:36px;
-  line-height:2,5em;
+  font-size:56px;
+  line-height:1em;
   letter-spacing: 2%;
-  padding:72px 52px;
+  padding-bottom: 48px;
   margin:0 auto;
-  text-align: center;
 }
 .order-button{
   display: block;
@@ -227,8 +214,7 @@ header{
 }
 .section-two-cardset{
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  gap: 24px;
 }
 
 .visually-hidden{
@@ -248,7 +234,7 @@ header{
     height: 112px;
     border: 1px solid #8e8f99;
     background-color: #F4F4FD;
-    display:none;
+    display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;;
@@ -256,7 +242,7 @@ header{
   
 .cardset-two-item{
   list-style-type: none;
- width: calc((100% - 32px) / 1); 
+ width: calc((100% - 72px) / 4); 
 }
 
 .section-two p{
@@ -267,7 +253,6 @@ header{
 }
 .section-our-team{
   background-color: #F4F4FD;
-  width: 100%;
 }
 .title-htwo{
   margin-bottom: 72px;
@@ -275,11 +260,9 @@ header{
 
 .our-team-cardset{
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
   text-align: center;
-
 }
 .section-our-team h2{
   color: #2E2F42;
@@ -290,7 +273,7 @@ header{
   text-align: center;
 }
 .ourteam-item{
-  width: calc((100% - 32px) / 1);
+  width: calc((100% - 72px) / 4);
   list-style-type: none;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
@@ -304,7 +287,6 @@ text-align: center;
   height:260px;
 }
 .staff{
-  width: 100%;
   padding: 32px 0;
 }
 
@@ -334,8 +316,10 @@ text-align: center;
 
 .our-portofilo-cardset{
   display: flex;
-  flex-direction: column;
-  gap: 48px;  
+  flex-wrap: wrap;
+  gap: 15px;
+  column-gap: 24px;
+  row-gap: 48px;  
 }
 .section-four-div{
   padding: 120px 0;
@@ -353,7 +337,8 @@ text-align: center;
   
 }
 .section-four img{
-  width:100%;
+  width: 360px;
+  height: 300px;
 }
 
 .section-four p{
@@ -397,19 +382,18 @@ text-align: center;
   }
   .port-item:hover .overlay{
     transform: translateY(0);
-    height: 240px;
+    height: 300px;
   }
   .container-footer{
     display:flex;
-    flex-direction: column;
   }
   
 .footer {
-  width: 100%;
   background-color: #2E2F42;
   color:#ffffff;
-  padding: 96px 0;
-  margin:0 auto;
+  height: 312px;
+  padding: 100px 0;
+  align-items:start;
 }
   
 .footer-logo{
@@ -421,7 +405,6 @@ text-align: center;
   letter-spacing:3%;
   display: inline-block;
   margin-bottom: 16px;
-  justify-content: center;
   
 }
 .web{
@@ -441,22 +424,9 @@ text-align: center;
   display: inline-block;
   width: 264px;
 }
-.logos-and-p a{
-  max-width: 320px;
-  display: flex;
-justify-content: center;
-margin:0 auto;
-}
 .social-media-footer{
   display:inline-block;
-  margin:0 auto ;
-  padding-top: 72px;
-}
-.social-media-footer h3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  margin-left: 120px;
 }
 .social-icons-list-footer{
   display:flex;
@@ -466,12 +436,10 @@ margin:0 auto;
   gap:16px;
 }
 .subscribe-footer{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 453px;
+  display: inline-block;
   align-items: flex-start;
-  padding-top: 72px;
-
+  margin-left:60px;
 }
 .subscribe-footer-label{
   display:block;
@@ -479,13 +447,9 @@ margin:0 auto;
   width: 264px;
 }
 .form-footer{
-  max-width: 320px;
   display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  align-items: end;
   gap: 24px;
-  margin:0 auto;
   
 }
   #footer-email{
