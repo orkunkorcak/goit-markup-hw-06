@@ -75,8 +75,12 @@ header{
 @media (min-width:768px) {
   .container-header{
     max-width: 768px;
-  }
-  
+  }  
+}
+@media  (min-width:1158px){
+  .container-header{
+    max-width: 1158px;
+  }  
 }
 
 .logo { 
@@ -247,6 +251,22 @@ header{
     display:block;
   }
   }
+
+  @media  (min-width:1158px){
+    .header{
+      height: 72px;
+    }
+    .container-header{
+      width: 1158px;
+      margin: 24px auto;
+    }
+    .adres{
+      display: flex;
+      flex-direction: row;
+      
+    }
+  }
+  
 .title-htree{
   color:#2E2F42;
   font-weight: 700;
@@ -315,6 +335,16 @@ header{
       margin-top: 64px;
     }
 }
+@media  (min-width:1158px){
+  .section-one{
+    max-width: 1440px;
+  }
+  .order-one{
+    width: 496px;
+    padding:0;
+  }
+}
+
 .section-two{
   width: 100%;
 }
@@ -374,6 +404,15 @@ header{
   }
   
 }
+@media (min-width: 1158px){
+  .section-two-cardset{
+    flex-wrap: nowrap;
+  }
+  .section-two-svgs{
+    display: flex;
+  }
+}
+
 .section-our-team{
   background-color: #F4F4FD;
   width: 100%;
@@ -531,10 +570,18 @@ text-align: center;
       row-gap: 72px;
   }
   .port-item{
-    width:calc((100% - 24px) / 2) ;
+    width:calc((100% - 24px) / 2);
   }
   .port-item:hover .overlay{
     height: 297px;
+  }
+}
+@media (min-width:1158px){
+  .our-portofilo-cardset{
+    row-gap: 48px;
+  }
+  .port-item{
+    width:calc((100% - 48px) / 3);
   }
 }
   .container-footer{
@@ -573,7 +620,7 @@ text-align: center;
   font-size:16px;
   line-height:1.5em;
   letter-spacing: 2%;
-  max-width: 264px;
+  width: 264px;
 }
 .logos-and-p{
   display: inline-block;
@@ -582,8 +629,8 @@ text-align: center;
 .logos-and-p a{
   max-width: 320px;
   display: flex;
-justify-content: center;
-margin:0 auto;
+ justify-content: center;
+ margin:0 auto;
 }
 .social-media-footer{
   display:inline-block;
@@ -689,6 +736,33 @@ margin:0 auto;
    
   }
   
+}
+@media (min-width:1158px){
+  .footer{
+    max-width: 1440px;
+    padding: 100px 0;
+    align-items:start;
+  }
+  .container-footer{
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:0;    
+  }
+  .logos-and-p a{
+    justify-content:left;
+    margin-bottom: 16px;
+  }
+  .footer-logo{
+    justify-content: left;
+    
+  }
+  .social-media-footer{
+    margin-left: 120px;
+  }
+  .subscribe-footer{
+    margin-left: 80px;
+  }
 }
 
 /* modal area */
