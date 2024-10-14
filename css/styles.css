@@ -460,7 +460,7 @@ header{
 text-align: center;
 }
 .section-our-team img{
-  width:264px;
+  width:100%;
   height:260px;
 }
 .staff{
@@ -601,7 +601,7 @@ text-align: center;
   }
   
 .footer {
-  max-width: 320px;
+  max-width: 100%;
   background-color: #2E2F42;
   color:#ffffff;
   padding: 96px 0;
@@ -728,7 +728,7 @@ text-align: center;
 }
 @media (min-width:768px){
   .footer{
-    max-width: 768px;
+    width: 100%;
     padding:96px 108px;
   }
   .container-footer{
@@ -750,7 +750,7 @@ text-align: center;
 }
 @media (min-width:1158px){
   .footer{
-    max-width: 1440px;
+    max-width: 100%;
     padding: 100px 0;
     align-items:start;
   }
